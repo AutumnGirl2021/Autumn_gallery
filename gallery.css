@@ -1,0 +1,89 @@
+.content{
+    height: 732px;
+    text-align: center;
+}
+.content img{
+  width: 100%;
+}
+.gallery{
+  columns:4;/* 段組みの数 */
+  /* ギャラリー左右に余白をつける */
+  padding:0 15px;
+  margin:0;
+}
+.gallery li{
+  /*各画像下に余白をつける */
+  margin-bottom: 15px;
+  list-style:none;
+}
+/* ギャラリー内のイメージは横幅１００％にする */
+.gallery img{
+  width:100%;
+  height: auto;
+}
+.footer {
+}
+.footer p {
+    margin: auto;
+    text-align: center;
+    bottom: auto;
+}
+ /* 横幅９００以下の段組み設定 */
+ @media only screen and (max-width: 900px){
+  .gallery{
+  columns:3;
+  }
+ }
+  @media only screen and (max-width: 768x){
+    .gallery{
+    columns:2;
+    }
+  }
+  /* 全画面表示CSS */
+
+.hero {
+  height: 100vh; /* 全画面表示 */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(Autumn.jpg);
+}
+
+/* 黒の背景 */
+
+.overlay::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* テキスト */
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+.title {
+  font-family:  'Kaushan Script', cursive;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.2;
+  padding: 0 50px;
+  text-align: center;
+  color: #fff;
+}
+.description {
+  color: white;
+  text-align: center;
+}
