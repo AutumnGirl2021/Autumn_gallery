@@ -1,4 +1,4 @@
-//lightbox オプションの設定例
+
 lightbox.option({
   //グループ最後の写真の矢印をクリックしたらグループ最初の写真に戻る
   'wrapAround': true,
