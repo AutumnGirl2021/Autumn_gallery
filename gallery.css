@@ -6,17 +6,14 @@
   width: 100%;
 }
 .gallery{
-  columns:4;/* 段組みの数 */
-  /* ギャラリー左右に余白をつける */
+  columns:4;
   padding:0 15px;
   margin:0;
 }
 .gallery li{
-  /*各画像下に余白をつける */
   margin-bottom: 15px;
   list-style:none;
 }
-/* ギャラリー内のイメージは横幅１００％にする */
 .gallery img{
   width:100%;
   height: auto;
@@ -28,7 +25,6 @@
     text-align: center;
     bottom: auto;
 }
- /* 横幅９００以下の段組み設定 */
  @media only screen and (max-width: 900px){
   .gallery{
   columns:3;
